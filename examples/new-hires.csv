@@ -1,0 +1,4 @@
+GivenName,Surname,Department,JobTitle,UsageLocation,LicenseSku,Groups,Manager
+Jane,Doe,Finance,Financial Analyst,CA,ENTERPRISEPACK,Finance;All Ottawa Staff,cfo@contoso.com
+Mary Ann,O'Brien,Information Technology,Service Desk Analyst,CA,ENTERPRISEPACK,IT Service Desk;All Ottawa Staff,itmanager@contoso.com
+Luis,Garcia,Operations,Operations Coordinator,US,SPE_E3,Operations,coo@contoso.com

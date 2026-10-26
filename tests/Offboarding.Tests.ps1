@@ -43,7 +43,7 @@ Describe 'Start-M365Offboarding' {
         Should -Invoke Revoke-M365GraphUserSession -ModuleName M365Admin -Times 1 -Exactly
         Should -Invoke Remove-M365GraphGroupMember -ModuleName M365Admin -Times 1 -Exactly -ParameterFilter { $GroupId -eq 'g-sales' }
         Should -Invoke Set-M365GraphUserLicense -ModuleName M365Admin -Times 1 -Exactly -ParameterFilter {
-            $RemoveSkuId -contains $script:E3 -and @($AddSkuId).Count -eq 0
+            $RemoveSkuId -contains $script:E3 -and -not $AddSkuId
         }
     }
 
